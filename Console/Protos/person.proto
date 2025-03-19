@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+option csharp_namespace = "Api.Protos";
+
+service PersonService {
+  rpc ExchangePersons (stream Person) returns (stream Person);
+}
+
+message Person {
+  string name = 1;
+  string dateOfBirth = 2;
+  int32 age = 3;
+  bool active = 4;
+}
