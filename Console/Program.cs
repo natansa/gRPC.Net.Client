@@ -2,8 +2,10 @@
 using Grpc.Core;
 using Grpc.Net.Client;
 
-var handler = new HttpClientHandler();
-handler.ServerCertificateCustomValidationCallback = HttpClientHandler.DangerousAcceptAnyServerCertificateValidator;
+var handler = new HttpClientHandler
+{
+    ServerCertificateCustomValidationCallback = HttpClientHandler.DangerousAcceptAnyServerCertificateValidator
+};
 
 var channel = GrpcChannel.ForAddress("http://localhost:7192");
 var client = new PersonService.PersonServiceClient(channel);

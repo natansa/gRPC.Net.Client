@@ -31,3 +31,9 @@ Antes de rodar o cliente, certifique-se de ter:
 ```sh
 git clone https://github.com/seu-usuario/gRPC.Net.Client.git
 cd gRPC.Net.Client
+
+---
+
+## 🙋‍♂️ Autor
+
+Desenvolvido por [Natanael Sa Rodrigues](https://github.com/natansa)
